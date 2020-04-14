@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <title>Triangle Tracker</title>
 </head>
+
 <body>
   <div class="container">
     <h1>Triangle Tracker</h1>
-    <p>Ever wanted to track a triangle? Well now you can! Enter three numbers and we will determine what kind of triangle you've made.</p>
+    <p>Ever wanted to track a triangle? Well now you can! Enter three numbers and we will determine what kind of
+      triangle you've made.</p>
 
     <form id="user-input">
       <label for="side1">Side 1</label>
+      <br>
       <input type="text" name="side1" id="side1">
       <br>
       <label for="side2">Side 2</label>
+      <br>
       <input type="text" name="side2" id="side2">
       <br>
       <label for="side3">Side 3</label>
+      <br>
       <input type="text" name="side3" id="side3">
       <br>
-      <label for="side4">Side 4</label>
-      <input type="text" name="side4" id="side4">
       <br>
       <br>
       <button type="submit" class="btn">Track Triangle</button>
@@ -30,9 +34,10 @@
 
     <div id="result-scalene">
       <h2>You made a Scalene Triangle.</h2>
+      <img src="https://geometryhelp.net/wp-content/uploads/2019/05/scalene-inequality.jpg">
       <p>A scalene triangle is where none of the sides are equal.</p>
     </div>
-    <div id="result-equil"> 
+    <div id="result-equil">
       <h2>You made an Equilateral Triangle.</h2>
       <img src="https://d2jmvrsizmvf4x.cloudfront.net/gCclQMQODMDc9zyYdaAO_1200px-Triangle.Equilateral.svg.png">
       <p>An Equilateral Triangle is where all three sides are equal.</p>
@@ -40,17 +45,26 @@
 
     <div id="result-isosceles">
       <h2>You made an Isosceles Triangle.</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Triangle.Isosceles.svg/1200px-Triangle.Isosceles.svg.png" id="equilateral">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Triangle.Isosceles.svg/1200px-Triangle.Isosceles.svg.png"
+        id="equilateral">
       <p>An Isosceles Triangle is where exactly 2 sides are equal.</p>
-    </div>
-    
-    <div id="no-triangle">
-      <h2>You made No Triangle.</h2>
-      <p>What is wrong? Has our flawed education system failed you at yet another thing? Are we at the point where we don't know what a triangle is anymore?
-        This makes me sick. It's such a basic, world-known shape, how does one not have the ability to reason its one identifying factor? Why even try?
 
-      </p>
+      <div id="result-string">
+        <p>We're sorry, we cannot read this. please put in integers only.</p>
+      </div>
+
+      <div id="result-negative">
+        <p>These are negative numbers. We only accept positivity on this site.</p>
+      </div>
+
+      <div id="no-triangle">
+        <p>This is not a triangle. Please try again.</p>
+      </div>
     </div>
+
+
   </div>
 </body>
+
 </html>
